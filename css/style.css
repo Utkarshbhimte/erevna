@@ -55,8 +55,26 @@ html .gradient #search-bar, body .gradient #search-bar {
 }
 
 html .gradient #card, body .gradient #card {
-  display: block;
+  display: none;
+  flex-direction: row;
+  position: fixed;
   margin: 0 auto;
-  width: 70vw;
+  width: 60vw;
   background-color: white;
+  top: 25vh;
+  left: 20vw;
+  box-shadow: 0px 12px 17px -9px #001f3f;
+  color: black;
+}
+
+html .gradient #card h2, body .gradient #card h2 {
+  margin-left: 2em;
+}
+
+html .gradient #card ul li, body .gradient #card ul li {
+  list-style: none;
+}
+
+html .gradient #card ul li a, body .gradient #card ul li a {
+  text-decoration: none;
 }
