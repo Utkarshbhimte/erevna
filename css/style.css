@@ -8,9 +8,14 @@ html, body {
   background-color: black;
   color: white;
   font-family: 'Quicksand', sans-serif;
+  transition: all 20s ease;
   background-image: url("../images/IN-en-20160822-pophoursaltreverse-perspective_alpha_website_large.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+}
+
+html:hover, body:hover {
+  background-position: right top;
 }
 
 html .gradient, body .gradient {
@@ -20,7 +25,7 @@ html .gradient, body .gradient {
 
 html .gradient header, body .gradient header {
   display: block;
-  margin: 7vh auto 0px auto;
+  margin: 14vh auto 0px auto;
   text-align: center;
   opacity: 1;
   transition: all .3s ease;
@@ -46,7 +51,6 @@ html .gradient #search-bar, body .gradient #search-bar {
   outline: none;
   border: none;
   border-radius: 0;
-  background: #7FDBFF;
   font-family: 'Quicksand', sans-serif;
   height: 50px;
   box-shadow: 0px 12px 17px -9px #001f3f;
@@ -59,22 +63,69 @@ html .gradient #card, body .gradient #card {
   flex-direction: row;
   position: fixed;
   margin: 0 auto;
-  width: 60vw;
+  width: 50vw;
   background-color: white;
   top: 25vh;
-  left: 20vw;
+  left: 25vw;
   box-shadow: 0px 12px 17px -9px #001f3f;
   color: black;
 }
 
-html .gradient #card h2, body .gradient #card h2 {
-  margin-left: 2em;
+html .gradient #card #poster, body .gradient #card #poster {
+  width: auto;
+  height: 40vh;
 }
 
-html .gradient #card ul li, body .gradient #card ul li {
-  list-style: none;
+html .gradient #card #content, body .gradient #card #content {
+  padding: 1.4em 2em;
+  width: 100%;
 }
 
-html .gradient #card ul li a, body .gradient #card ul li a {
+html .gradient #card #content h2, body .gradient #card #content h2 {
+  margin: 1px;
+}
+
+html .gradient #card #content .m-data, body .gradient #card #content .m-data {
+  color: #a1a1a1;
+}
+
+html .gradient #card #content #download-links, body .gradient #card #content #download-links {
+  margin-top: 1em;
+}
+
+html .gradient #card #content #icons, body .gradient #card #content #icons {
+  display: flex;
+  margin: 10px 0px;
+}
+
+html .gradient #card #content #icons div, body .gradient #card #content #icons div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 200px;
+}
+
+html .gradient #card #content #icons div .fa, body .gradient #card #content #icons div .fa {
+  font-size: 30px !important;
+  margin-right: 10px;
+  color: #b31217;
+}
+
+html .gradient #card #content #icons div img, body .gradient #card #content #icons div img {
+  height: 30px;
+  margin-right: 15px;
+}
+
+html .gradient #card #content #download-links h4, body .gradient #card #content #download-links h4 {
+  margin: 0px;
+}
+
+html .gradient #card #content #download-links #quality-wrap, body .gradient #card #content #download-links #quality-wrap {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px 0px;
+}
+
+html .gradient #card #content #download-links #quality-wrap a, body .gradient #card #content #download-links #quality-wrap a {
   text-decoration: none;
 }
