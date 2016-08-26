@@ -129,3 +129,12 @@ html .gradient #card #content #download-links #quality-wrap, body .gradient #car
 html .gradient #card #content #download-links #quality-wrap a, body .gradient #card #content #download-links #quality-wrap a {
   text-decoration: none;
 }
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-size: cover;
+  }
+  body header h1 {
+    font-size: 12vw;
+  }
+}
