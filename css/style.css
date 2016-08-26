@@ -8,14 +8,9 @@ html, body {
   background-color: black;
   color: white;
   font-family: 'Quicksand', sans-serif;
-  transition: all 20s ease;
   background-image: url("../images/IN-en-20160822-pophoursaltreverse-perspective_alpha_website_large.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-}
-
-html:hover, body:hover {
-  background-position: right top;
 }
 
 html .gradient, body .gradient {
@@ -130,7 +125,7 @@ html .gradient #card #content #download-links #quality-wrap a, body .gradient #c
   text-decoration: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   html, body {
     background-size: cover;
   }
