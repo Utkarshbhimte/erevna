@@ -130,11 +130,72 @@ html .gradient #card #content #download-links #quality-wrap a, body .gradient #c
   text-decoration: none;
 }
 
-@media only screen and (max-width: 768px) {
-  body {
+@media only screen and (min-width: 768px) {
+  html, body {
     background-size: cover;
   }
-  body header h1 {
-    font-size: 12vw;
+  html .gradient header, body .gradient header {
+    margin: 19vh auto 0px auto;
+  }
+  html .gradient header h1, body .gradient header h1 {
+    font-size: 18vw;
+  }
+  html .gradient #search-bar, body .gradient #search-bar {
+    top: 45vh;
+    left: 5vw;
+    padding: 1.5em 1em 1.5em 1em;
+    width: 90vw;
+    font-size: 32px;
+  }
+  html .gradient #card, body .gradient #card {
+    width: 90vw;
+    top: 20vh;
+    left: 5vw;
+  }
+  html .gradient #card #poster, body .gradient #card #poster {
+    width: 100%;
+    height: 100%;
+  }
+  html .gradient #card #content, body .gradient #card #content {
+    padding: 1.4em 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  html .gradient #card #content h2, body .gradient #card #content h2 {
+    font-size: 3em;
+    margin: 1px;
+  }
+  html .gradient #card #content .m-data, body .gradient #card #content .m-data {
+    font-size: 1.5em;
+    color: #a1a1a1;
+  }
+  html .gradient #card #content #download-links, body .gradient #card #content #download-links {
+    margin-top: 1em;
+  }
+  html .gradient #card #content #icons, body .gradient #card #content #icons {
+    display: flex;
+    font-size: 2em;
+    flex-direction: column;
+  }
+  html .gradient #card #content #icons div, body .gradient #card #content #icons div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  html .gradient #card #content #icons div .fa, body .gradient #card #content #icons div .fa {
+    font-size: 30px !important;
+    margin-right: 10px;
+    color: #b31217;
+  }
+  html .gradient #card #content #icons div img, body .gradient #card #content #icons div img {
+    height: 30px;
+    margin-right: 15px;
+  }
+  html .gradient #card #content #download-links, body .gradient #card #content #download-links {
+    float: right;
+    font-size: 1.6em;
   }
 }
