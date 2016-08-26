@@ -13,12 +13,12 @@ html, body {
   background-position: center top;
 }
 
-html .gradient, body .gradient {
+.gradient {
   background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 17%, black 100%);
   height: 100%;
 }
 
-html .gradient header, body .gradient header {
+.gradient header {
   display: block;
   margin: 14vh auto 0px auto;
   text-align: center;
@@ -26,7 +26,7 @@ html .gradient header, body .gradient header {
   transition: all .3s ease;
 }
 
-html .gradient header h1, body .gradient header h1 {
+.gradient header h1 {
   display: inline-block;
   font-size: 7vw;
   padding: .1em .5em;
@@ -34,7 +34,7 @@ html .gradient header h1, body .gradient header h1 {
   color: #7FDBFF;
 }
 
-html .gradient #search-bar, body .gradient #search-bar {
+.gradient #search-bar {
   display: block;
   position: fixed;
   top: 50vh;
@@ -53,7 +53,7 @@ html .gradient #search-bar, body .gradient #search-bar {
   transition: all .3s ease-in-out;
 }
 
-html .gradient #card, body .gradient #card {
+.gradient #card {
   display: none;
   flex-direction: row;
   position: fixed;
@@ -66,130 +66,130 @@ html .gradient #card, body .gradient #card {
   color: black;
 }
 
-html .gradient #card #poster, body .gradient #card #poster {
+.gradient #card #poster {
   width: auto;
   height: 40vh;
 }
 
-html .gradient #card #content, body .gradient #card #content {
+.gradient #card #content {
   padding: 1.4em 2em;
   width: 100%;
 }
 
-html .gradient #card #content h2, body .gradient #card #content h2 {
+.gradient #card #content h2 {
   margin: 1px;
 }
 
-html .gradient #card #content .m-data, body .gradient #card #content .m-data {
+.gradient #card #content .m-data {
   color: #a1a1a1;
 }
 
-html .gradient #card #content #download-links, body .gradient #card #content #download-links {
+.gradient #card #content #download-links {
   margin-top: 1em;
 }
 
-html .gradient #card #content #icons, body .gradient #card #content #icons {
+.gradient #card #content #icons {
   display: flex;
   margin: 10px 0px;
 }
 
-html .gradient #card #content #icons div, body .gradient #card #content #icons div {
+.gradient #card #content #icons div {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 200px;
 }
 
-html .gradient #card #content #icons div .fa, body .gradient #card #content #icons div .fa {
+.gradient #card #content #icons div .fa {
   font-size: 30px !important;
   margin-right: 10px;
   color: #b31217;
 }
 
-html .gradient #card #content #icons div img, body .gradient #card #content #icons div img {
+.gradient #card #content #icons div img {
   height: 30px;
   margin-right: 15px;
 }
 
-html .gradient #card #content #download-links h4, body .gradient #card #content #download-links h4 {
+.gradient #card #content #download-links h4 {
   margin: 0px;
 }
 
-html .gradient #card #content #download-links #quality-wrap, body .gradient #card #content #download-links #quality-wrap {
+.gradient #card #content #download-links #quality-wrap {
   display: flex;
   justify-content: space-around;
   margin: 5px 0px;
 }
 
-html .gradient #card #content #download-links #quality-wrap a, body .gradient #card #content #download-links #quality-wrap a {
+.gradient #card #content #download-links #quality-wrap a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 768px) {
-  html, body {
+@media (max-width: 600px) {
+  body {
     background-size: cover;
   }
-  html .gradient header, body .gradient header {
+  body .gradient header {
     margin: 19vh auto 0px auto;
   }
-  html .gradient header h1, body .gradient header h1 {
+  body .gradient header h1 {
     font-size: 18vw;
   }
-  html .gradient #search-bar, body .gradient #search-bar {
+  body .gradient #search-bar {
     top: 45vh;
     left: 5vw;
     padding: 1.5em 1em 1.5em 1em;
     width: 90vw;
     font-size: 32px;
   }
-  html .gradient #card, body .gradient #card {
+  body .gradient #card {
     width: 90vw;
     top: 20vh;
     left: 5vw;
   }
-  html .gradient #card #poster, body .gradient #card #poster {
+  body .gradient #card #poster {
     width: 100%;
     height: 100%;
   }
-  html .gradient #card #content, body .gradient #card #content {
+  body .gradient #card #content {
     padding: 1.4em 2em;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  html .gradient #card #content h2, body .gradient #card #content h2 {
+  body .gradient #card #content h2 {
     font-size: 3em;
     margin: 1px;
   }
-  html .gradient #card #content .m-data, body .gradient #card #content .m-data {
+  body .gradient #card #content .m-data {
     font-size: 1.5em;
     color: #a1a1a1;
   }
-  html .gradient #card #content #download-links, body .gradient #card #content #download-links {
+  body .gradient #card #content #download-links {
     margin-top: 1em;
   }
-  html .gradient #card #content #icons, body .gradient #card #content #icons {
+  body .gradient #card #content #icons {
     display: flex;
     font-size: 2em;
     flex-direction: column;
   }
-  html .gradient #card #content #icons div, body .gradient #card #content #icons div {
+  body .gradient #card #content #icons div {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     width: 100%;
   }
-  html .gradient #card #content #icons div .fa, body .gradient #card #content #icons div .fa {
+  body .gradient #card #content #icons div .fa {
     font-size: 30px !important;
     margin-right: 10px;
     color: #b31217;
   }
-  html .gradient #card #content #icons div img, body .gradient #card #content #icons div img {
+  body .gradient #card #content #icons div img {
     height: 30px;
     margin-right: 15px;
   }
-  html .gradient #card #content #download-links, body .gradient #card #content #download-links {
+  body .gradient #card #content #download-links {
     float: right;
     font-size: 1.6em;
   }
